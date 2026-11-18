@@ -154,11 +154,11 @@ def moving_average(data: list[float], window: int) -> list[float]:
 
 ## Running the Suite
 
-This version is superseded by `suite_v1.1.md` (fixes prompts 2, 3, 4, 7 and 8). Keep it only to re-run or compare old v1 results:
+This version is superseded by `archive/suite_v1.1.md` (fixes prompts 2, 3, 4, 7 and 8). Keep it only to re-run or compare old v1 results:
 
 ```bash
-python run_suite.py run --profile nvidia --suite suite_v1.md      # automated
-python eval_runner.py --profile nvidia --suite suite_v1.md        # manual
+python run_suite.py run --profile nvidia --suite archive/suite_v1.md      # automated
+python eval_runner.py --profile nvidia --suite archive/suite_v1.md        # manual
 ```
 
 ---
