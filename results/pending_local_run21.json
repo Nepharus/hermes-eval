@@ -1,0 +1,32 @@
+{
+  "run_id": 21,
+  "profile": "local",
+  "model": "gemma4:26b",
+  "suite_version": "v1.2",
+  "responses": [
+    {
+      "number": 1,
+      "name": "Constrained Writing (Multiple Hard Constraints)",
+      "response": "",
+      "error": "ERROR: timed out after 1800s"
+    },
+    {
+      "number": 2,
+      "name": "Code Generation (Strict Validation)",
+      "response": "",
+      "error": "ERROR: timed out after 1800s"
+    },
+    {
+      "number": 3,
+      "name": "Reasoning (Logic Grid)",
+      "response": "",
+      "error": "ERROR: timed out after 1800s"
+    },
+    {
+      "number": 4,
+      "name": "Long-Input Data Extraction (Log Analysis)",
+      "response": "",
+      "error": "ERROR: timed out after 1800s"
+    }
+  ]
+}

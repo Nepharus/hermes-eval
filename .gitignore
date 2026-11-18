@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+backup_*/
+*.backup_*.db
+history.db
+*.zip
+.env
