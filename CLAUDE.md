@@ -9,5 +9,4 @@
 
 ## Files
 - history.db and backups are local only and gitignored. Don't modify history.db unless asked.
-- results/ holds run outputs. Don't edit existing result files.
 - results/ holds run outputs and is local only (gitignored). Don't edit existing result files.
