@@ -10,3 +10,8 @@
 ## Files
 - history.db and backups are local only and gitignored. Don't modify history.db unless asked.
 - results/ holds run outputs and is local only (gitignored). Don't edit existing result files.
+
+## Running evals
+- Run one eval at a time. Don't start run_suite.py, collect_responses.py or eval_runner.py while another run is in progress, including in the background or for a different profile.
+- Within a run, send prompts one after another. Don't parallelize prompts or judge calls (e.g. with threads, `&` or xargs -P).
+- Why: parallel runs compete for the same local GPU and API rate limits, which skews timings, causes timeouts and makes scores less comparable between runs.
