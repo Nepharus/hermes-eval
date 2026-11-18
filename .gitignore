@@ -5,3 +5,4 @@ backup_*/
 history.db
 *.zip
 .env
+results/
