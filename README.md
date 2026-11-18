@@ -80,6 +80,15 @@ Run every command from the repo directory:
 cd ~/.hermes/eval
 ```
 
+### One run at a time
+
+Run evals one after another, never in parallel. Wait for one `run_suite.py`,
+`collect_responses.py` or `eval_runner.py` run to finish before you start the
+next, even for a different profile. The scripts already send prompts and judge
+calls one at a time; don't parallelize them. Parallel runs compete for the same
+local GPU and API rate limits, which skews timings, causes timeouts, and makes
+scores less comparable between runs.
+
 ### Automated run with a judge profile
 
 ```bash
