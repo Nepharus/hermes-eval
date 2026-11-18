@@ -185,6 +185,7 @@ Pending outside-judge runs are kept unless you add `--drop-pending`.
   somewhere else.
 - **`results/pending_<profile>_run<id>.json`** holds the raw replies from
   `collect_responses.py` while they wait for an outside judge.
+- **`results/`** is local only and gitignored, like `history.db`
 
 Treat existing files in `results/` as a record and don't edit them.
 
