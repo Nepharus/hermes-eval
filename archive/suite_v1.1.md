@@ -181,13 +181,13 @@ cd ~/.hermes/eval
 
 # Automated: each prompt goes to the profile via `hermes -p <profile> chat`,
 # then a judge profile scores it (default judge: nvidia)
-python run_suite.py run --profile homepc --judge-profile nvidia --suite suite_v1.1.md
+python run_suite.py run --profile homepc --judge-profile nvidia --suite archive/suite_v1.1.md
 
 # Automated answers, manual scoring
-python run_suite.py run --profile nvidia --manual-score --suite suite_v1.1.md
+python run_suite.py run --profile nvidia --manual-score --suite archive/suite_v1.1.md
 
 # Fully manual: you run each prompt yourself and paste the reply (END to finish)
-python eval_runner.py --profile nvidia --suite suite_v1.1.md
+python eval_runner.py --profile nvidia --suite archive/suite_v1.1.md
 
 # History and comparisons
 python run_suite.py history
