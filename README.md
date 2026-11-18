@@ -33,9 +33,12 @@ guide, and the maximum is 80 points.
 
 | File | Version | Notes |
 |------|---------|-------|
-| `suite_v1.md` | v1 | Original smoke test |
-| `suite_v1.1.md` | v1.1 | Revised smoke test. Too easy: a 12B model scored 79/80 |
+| `archive/suite_v1.md` | v1 | Original smoke test |
+| `archive/suite_v1.1.md` | v1.1 | Revised smoke test. Too easy: a 12B model scored 79/80 |
 | `suite_v1.2.md` | v1.2 | **Default.** Harder, and every answer can be checked objectively |
+
+The old suites are kept in `archive/` so you can still re-run them or read
+what earlier results were scored against.
 
 The v1.2 prompts are:
 
@@ -83,7 +86,7 @@ cd ~/.hermes/eval
 python run_suite.py init                                         # create or upgrade history.db
 python run_suite.py run --profile homepc --judge-profile nvidia  # judge defaults to nvidia
 python run_suite.py run --profile local --prompts 1,3,7          # run only some prompts
-python run_suite.py run --profile homepc --suite suite_v1.1.md   # use an older suite
+python run_suite.py run --profile homepc --suite archive/suite_v1.1.md  # use an older suite
 python run_suite.py run --profile nvidia --manual-score          # you score each reply
 ```
 
@@ -197,5 +200,6 @@ Treat existing files in `results/` as a record and don't edit them.
 | `apply_scores.py` | Loads an outside judge's scores into a pending run |
 | `verify_suite_v1_2.py` | Recomputes the v1.2 answer keys |
 | `cleanup_history.py` | Removes old, partial and abandoned runs from `history.db` |
-| `suite_v*.md` | Prompt suites |
+| `suite_v1.2.md` | Current prompt suite |
+| `archive/` | Older suites (v1, v1.1) |
 | `results/` | Run reports and pending replies |

@@ -283,7 +283,7 @@
 ```bash
 cd ~/.hermes/eval
 python run_suite.py run --profile homepc --judge-profile nvidia     # automated (v1.2 is the default)
-python run_suite.py run --profile nvidia --suite suite_v1.1.md      # older suite
+python run_suite.py run --profile nvidia --suite archive/suite_v1.1.md      # older suite
 python verify_suite_v1_2.py                                         # re-check the answer keys
 ```
 
